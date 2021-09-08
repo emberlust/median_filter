@@ -139,11 +139,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="input.c" />
+    <ClCompile Include="filter.c" />
+    <ClCompile Include="myio.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="sort.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="input.h" />
+    <ClInclude Include="filter.h" />
+    <ClInclude Include="PMG.h" />
+    <ClInclude Include="myio.h" />
+    <ClInclude Include="sort.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="test.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

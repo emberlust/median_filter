@@ -1,12 +1,12 @@
-#ifndef _PMG_H
-#define _PMG_H
+#ifndef _PGM_H
+#define _PGM_H
 
-typedef struct pmgData{
+typedef struct pgmData{
 	char* fileType;   //pmg file type
 	int width;        //image width 
 	int height;       //image height 
 	int max_white;    //image max white value 
 	int* value_matrix; //value table 
-} pmgData;
+} pgmData;
 
 #endif

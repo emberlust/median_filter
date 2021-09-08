@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "myio.h"
-#include "PMG.h"
+#include "PGM.h"
 
-void input(pmgData* myPGM, FILE* stream)
+void input(pgmData* myPGM, FILE* stream)
 {
 	fscanf_s(stream, "%s", myPGM->fileType, 3);
 	fscanf_s(stream, "%d", &myPGM->width);

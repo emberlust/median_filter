@@ -146,7 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="filter.h" />
-    <ClInclude Include="PMG.h" />
+    <ClInclude Include="PGM.h" />
     <ClInclude Include="myio.h" />
     <ClInclude Include="sort.h" />
   </ItemGroup>

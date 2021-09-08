@@ -1,8 +1,8 @@
-#include "PMG.h"
+#include "PGM.h"
 
 #ifndef _MYIO_H
 #define _MYIO_H
 
-void input(pmgData *myPGM, FILE *stream);
+void input(pgmData *myPGM, FILE *stream);
 
 #endif

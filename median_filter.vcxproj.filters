@@ -32,7 +32,7 @@
     <ClInclude Include="myio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PMG.h">
+    <ClInclude Include="PGM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="filter.h">

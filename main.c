@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "myio.h"
-#include "PMG.h"
+#include "PGM.h"
 #include "sort.h"
 
 int main()
 {
 	FILE* stream;
-	pmgData* myPMG;
+	pgmData* myPGM;
 
-	myPMG = malloc(sizeof(pmgData));
-	myPMG->fileType = malloc(3 * sizeof(char));
+	myPGM = malloc(sizeof(pgmData));
+	myPGM->fileType = malloc(3 * sizeof(char));
 
 	fopen_s(&stream, "test.txt", "r");
-	input(myPMG, stream);
+	input(myPGM, stream);
 
 	fclose(stream);
 

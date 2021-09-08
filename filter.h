@@ -1,8 +1,8 @@
-#include "PGM.h"
+#include "PMG.h"
 
 #ifndef _FILTER_H
 #define _FILTER_H
 
-void filter(pgmData* myPGM);
+void filter(pmgData* myPGM);
 
 #endif

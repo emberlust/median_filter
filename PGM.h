@@ -2,7 +2,7 @@
 #define _PGM_H
 
 typedef struct pgmData{
-	char* fileType;   //pmg file type
+	char* fileType;   //pgm file type
 	int width;        //image width 
 	int height;       //image height 
 	int max_white;    //image max white value 

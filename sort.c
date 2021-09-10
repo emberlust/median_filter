@@ -65,6 +65,7 @@ void merge(int* vector, int left, int middle, int right)
 void swap(int* add1, int* add2)
 {
 	int* new_add;
+
 	new_add = add1;
 	add1 = add2;
 	add2 = add1;

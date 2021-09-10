@@ -54,16 +54,16 @@ int* create_array(int* matrix, int range, int x, int y, int width, int height)
 
 void filter(pgmData* myPGM, int range)
 {
-	int* vector = NULL;
 	int* new_matrix = malloc(myPGM->width * myPGM->height * sizeof(int));
 
 	for (int i = 0; i < myPGM->height;i++)
 	{
 		for (int j = 0; j < myPGM->width; j++)
 		{
-			vector = create_array(myPGM->value_matrix, range, i, j, myPGM->width, myPGM->height);
+			int* vector  = create_array(myPGM->value_matrix, range, i, j, myPGM->width, myPGM->height);
 			merge_sort(vector, 0, range * range - 1);
 			new_matrix[i * myPGM->width + j] = vector[range * range / 2];
+			free(vector);
 		}
 	}
 
@@ -72,5 +72,4 @@ void filter(pgmData* myPGM, int range)
 	myPGM->value_matrix = new_matrix;
 	new_matrix = swap;
 	free(new_matrix);
-	free(vector);
 }

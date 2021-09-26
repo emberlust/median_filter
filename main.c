@@ -7,7 +7,7 @@
 
 int main()
 {
-	char file_name[100];
+	char file_name[500];
 
 	FILE* stream;
 	pgmData* myPGM;
@@ -15,7 +15,7 @@ int main()
 	myPGM = malloc(sizeof(pgmData));
 	myPGM->fileType = malloc(3 * sizeof(char));
 
-	scanf_s("%s", file_name);
+	scanf_s("%s", file_name, 500);
 
 	fopen_s(&stream, file_name, "r");
 	input(myPGM, stream);

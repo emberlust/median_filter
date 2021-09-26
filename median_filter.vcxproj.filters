@@ -43,7 +43,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="test.txt">
+    <Text Include="data.pgm">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

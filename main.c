@@ -7,19 +7,23 @@
 
 int main()
 {
+	char file_name[100];
+
 	FILE* stream;
 	pgmData* myPGM;
 
 	myPGM = malloc(sizeof(pgmData));
 	myPGM->fileType = malloc(3 * sizeof(char));
 
-	fopen_s(&stream, "test.txt", "r");
+	scanf_s("%s", file_name);
+
+	fopen_s(&stream, file_name, "r");
 	input(myPGM, stream);
 	filter(myPGM, 3);
 
 	fclose(stream);
 
-	fopen_s(&stream, "test.txt", "w");
+	fopen_s(&stream, "output.pgm", "w");
 	output(myPGM, stream);
 
 
